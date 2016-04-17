@@ -27,7 +27,7 @@ class Midi():
     def open(self, pname='virtual output'):
         available_ports = self.midiout.get_ports()
         
-        if available_ports:
+        if False:#available_ports:
             self.midiout.open_port(0)
         else:
             self.midiout.open_virtual_port(pname)
